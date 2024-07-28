@@ -6,7 +6,7 @@ import logging
 import time
 
 app = Flask(__name__)
-inventory = {'item1': 100, 'item2': 200}
+inventory = {'item1': 100, 'item2': 200, 'item3': 150}
 logging.basicConfig(level=logging.INFO)
 
 def get_kafka_consumer():
