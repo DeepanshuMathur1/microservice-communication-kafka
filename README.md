@@ -13,11 +13,11 @@ This project contains two microservices: OrderService and InventoryService, whic
 # Steps
 
 1. Clone the repository:
-    git clone https://github.com/DeepanshuMathur1/microservice-communication-kafka.git
-    cd microservice-communication-kafka
+    - git clone https://github.com/DeepanshuMathur1/microservice-communication-kafka.git
+    - cd microservice-communication-kafka
 
 2. Build and run the services: To start the application on your local host run the bellow command.
-    docker-compose up --build
+    - docker-compose up --build
 
 3. Access the services:
     - OrderService: `http://localhost:5002/order` (POST)  - Will be used to place the orders 
@@ -26,7 +26,7 @@ This project contains two microservices: OrderService and InventoryService, whic
 # Testing
 
 1. Access the services to place orders and check inventory:
-    Either dirctly run the below curl on terminal or import it in postman and make a request
+    - Either dirctly run the below curl on terminal or import it in postman and make a request
     - Place an order:
         
         curl -X POST http://localhost:5002/order -H "Content-Type: application/json" -d '{"item_id": "item1", "quantity": 1}'
@@ -38,10 +38,10 @@ This project contains two microservices: OrderService and InventoryService, whic
 
 2. Run unit tests:
     - OrderService tests:
-        docker-compose run order_service python -m unittest discover -s .
+        - docker-compose run order_service python -m unittest discover -s .
 
     - InventoryService tests:
-        docker-compose run inventory_service python -m unittest discover -s .
+        - docker-compose run inventory_service python -m unittest discover -s .
 
 
 # Assumptions and Decisions
